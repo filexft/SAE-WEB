@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;1,400;1,700&family=Poppins&display=swap');
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    overflow-x: hidden;
+    font-family: poppins;
+    background-color: #f1f1f1;
+}
+
+.container
+{
+    min-height: 100vh;
+}
+.subcont
+{
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+}
+.subcont .left
+{
+    display: flex;
+    flex-direction: row;
+    padding: 0 30px ;
+    justify-content: space-between;
+    width: 100%;
+    height: 25vh;
+    border-radius: 0  0 20px 20px; 
+    background: url('../img/rightbg.jpg') center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.subcont .left::after
+{
+    content: '';
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    border-radius: 0  0 20px 20px; ;
+
+}
+.left .logo
+{
+    z-index: 3;
+}
+.left .logo img
+{
+    height: 100px;
+    margin-top: 20px;
+}
+.left .text 
+{
+    z-index: 2;
+    padding-bottom: 10px;
+}
+.left .text a
+{
+    text-decoration: none;
+}
+.left .text a h3
+{
+    margin: 7px 0;
+    color: #fff;
+}
+.text a h3:hover
+{
+    color: yellow;
+}
+.ingrid
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ingridt
+{
+    color: black;
+    margin: 20px;
+}
+.ingrid .items
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 30px
+}
+.items .icard
+{
+    width: 30rem;
+    height: 330px;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(245, 243, 243);
+    box-shadow: 0 0 5px 2px rgb(0, 0, 0, 0.3);
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+.items .imginfo
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.items .imginfo img
+{
+    width: 30rem;
+    height: 20rem;
+    border-radius: 2rem;
+    object-fit: cover;
+    box-shadow: 0 0 7px 0.25rem #aaa
+}
+/*D9D9D9*/
+.icard h3
+{
+    background-color: yellow;
+    width: 100%;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.icard ul
+{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+}
+.icard ul li
+{
+    width: 100%;
+    margin: 20px auto;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+}
+.icard ul li:hover
+{
+    background-color: #fff;
+}
+.ingrid .command
+{
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 30px;
+    color: black;
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+    margin: 10px 0;
+    margin-bottom: 30px;
+    transition: 0.3s ease-in-out;
+    animation: anim 3s infinite;
+}
+.ingrid .command:hover
+{
+    background-color: rgb(226, 226, 13);
+    color: black;
+}
+@keyframes anim {
+    0%
+    {
+        transform: scale(1);
+    }
+    50%
+    {
+        transform: scale(1.2);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}
+.subcont .footer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin: 10px;
+}
+.footer ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    flex-wrap: wrap;
+    width: 70%;
+    list-style: none;
+}
+.footer ul li a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 14px;
+}
+.media
+{
+    margin: 20px 0;
+}
+
+.media i
+{
+    margin: 0 5px;
+    font-size: 20px;
+}
+.media i:hover
+{
+    opacity: 0.5;
+}
+
+#twit
+{
+    color: #fff;
+    border-radius: 50%;
+    background-color: #1da1f2;
+    padding: 7px;
+}
+#insta
+{
+    color: #ffffff;
+    border-radius: 50%;
+    background-color: #f00073;
+    padding: 7px;
+}
+#snap
+{
+    color: black;
+    border-radius: 50%;
+    background-image: repeating-radial-gradient(red 0deg 10deg,yellow 10deg 20deg,blue 20deg 30deg,);
+    background-color: #f7f400;
+    padding: 7px;
+}
+
+@media screen and (max-width: 600px) {
+    .left .text a h3{
+        font-size: 14px;
+        margin: 3px 0;
+    }
+    .left .logo img
+    {
+        height: 70px;
+    }
+    .items .imginfo img
+    {
+        width: 300px;
+        max-width: 90%;
+    }
+    .items .icard
+    {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .left .text a h3{
+        font-size: 14px;
+    }
+    .left .logo img
+    {
+        height: 50px;
+    }
+}
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    height: 10px;
+    border-radius: 50px;
+    background: red;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(184, 60, 38);
+  }

@@ -1,0 +1,52 @@
+
+.eng
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.eng .icard 
+{
+    height: 370px;
+    width: 350px;
+    overflow: auto;
+}
+.eng img
+{
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 2px rgb(0, 0, 0, 0.3);
+}
+
+.eng .icard p
+{
+    width: 350px;
+    padding: 20px 20px 10px;
+    color: black;
+}
+.mid .eng:nth-child(3) .icard
+{
+    height: 300px;
+}
+
+/*
+.qa.show .a
+{
+    display: block;
+}
+
+.mns
+{
+    display: block;
+}
+.show .pls
+{
+    display: none;
+}
+.show .mns
+{
+    display: block;
+} */
+
+/* MAP PARt*/
